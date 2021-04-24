@@ -1,0 +1,30 @@
+ int n;
+            char op;
+            Console.Write("Please insert the number for loop :");
+            n = int.Parse(Console.ReadLine());
+            Console.Write("Please insert the character :");
+            op = char.Parse(Console.ReadLine());
+            pattern(n,op);
+   
+        }
+        static void pattern(int n,char op)
+        {
+            
+            for (int i = 1; i <= n; i++)
+            {
+
+                
+                int k;
+
+                if (i % 2 != 0)
+                    k = i + 1;
+                else
+                    k = i;
+
+                
+               
+                for (int j = 0; j < k; j++)
+
+                    Console.Write("{0}",op);
+                Console.WriteLine();
+            }
